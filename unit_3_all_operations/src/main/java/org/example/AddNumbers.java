@@ -19,5 +19,6 @@ public class AddNumbers {
             result += chars[i] - '0';
         }
         System.out.println(result);
+        System.out.println("__________________________________");
     }
 }
