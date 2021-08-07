@@ -8,16 +8,16 @@ public class Schedule {
     public void run() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Task 3. Lesson end time");
-        int lesson = 0;
+        byte lesson = 0;
         while ((lesson < 1) | (lesson > 10)) {
             System.out.println("Please enter lesson number between 1 and 10:");
             try {
-                lesson = Integer.parseInt(bufferedReader.readLine());
+                lesson = Byte.parseByte(bufferedReader.readLine());
             } catch (NumberFormatException ex) {
                 System.out.println("Sorry, incorrect format");
             }
         }
-        int result = lesson * 45 + lesson / 2 * 5 + (lesson - 1) / 2 * 5;
+        short result = (short) (lesson * 45 + lesson / 2 * 5 + (lesson - 1) / 2 * 5);
         System.out.println("The lesson finishes at:");
         if (result % 60 < 10){
             System.out.println(9 + result / 60 + ":0" + result % 60);
