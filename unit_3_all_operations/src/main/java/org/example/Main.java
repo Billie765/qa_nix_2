@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         new AddNumbers().run();
         new SortLetters().run();
+        new Schedule().run();
         //System.out.println("Hello");
     }
 }
