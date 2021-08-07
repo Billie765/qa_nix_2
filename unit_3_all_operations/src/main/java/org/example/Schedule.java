@@ -14,7 +14,7 @@ public class Schedule {
             try {
                 lesson = Integer.parseInt(bufferedReader.readLine());
             } catch (NumberFormatException ex) {
-                System.out.println("Please enter only digits.");
+                System.out.println("Sorry, incorrect format");
             }
         }
         int result = lesson * 45 + lesson / 2 * 5 + (lesson - 1) / 2 * 5;
