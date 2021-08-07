@@ -5,13 +5,19 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class SortLetters {
-    public static void run() throws Exception {
+    public void run() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Task 2. Sort and count letters");
+        System.out.println("Enter the string:");
         String message = bufferedReader.readLine();
         //System.out.println(message);
         message = message.replaceAll("\\P{L}", "");
         //System.out.println(message);
         char[] chars = message.toCharArray();
+        if (chars.length == 0) {
+            System.out.println("Empty line");
+            System.exit(0);
+        }
         Arrays.sort(chars);
         //System.out.println(chars);
         int i = 0;
@@ -28,5 +34,6 @@ public class SortLetters {
             i++;
         }
         System.out.println(buffer + " - " + total);
+        System.out.println("__________________________________");
     }
 }
