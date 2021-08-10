@@ -5,21 +5,18 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class SortLetters {
+
     public void run() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Task 2. Sort and count letters");
         System.out.println("Enter the string:");
         String message = bufferedReader.readLine();
-        //System.out.println(message);
         message = message.replaceAll("\\P{L}", "");
-        //System.out.println(message);
         char[] chars = message.toCharArray();
         if (chars.length == 0) {
             System.out.println("No alphabetic characters in line");
-        }
-        else {
+        } else {
             Arrays.sort(chars);
-            //System.out.println(chars);
             int i = 0;
             char buffer = chars[0];
             int total = 0;
