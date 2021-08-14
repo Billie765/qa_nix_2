@@ -23,8 +23,7 @@ public class ReverseString {
     public static String reverse(String str, boolean reverseAll) {
         if (reverseAll) {
             return reverseString(str);
-        }
-        else {
+        } else {
             return reverseWords(str);
         }
     }
@@ -34,6 +33,9 @@ public class ReverseString {
     }
 
     public static String reverse(String str, int start, int end) {
+        if (start >= str.length() | start > end | end > str.length()) {
+            return "Incorrect indexes";
+        }
         String sub = str.substring(start, end + 1);
         String result = reverseWords(sub);
         return str.replace(sub, result);
