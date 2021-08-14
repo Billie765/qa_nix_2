@@ -3,8 +3,8 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-
 public class Schedule {
+
     public void run() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Task 3. Lesson end time");
