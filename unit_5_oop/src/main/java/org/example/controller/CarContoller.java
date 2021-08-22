@@ -48,6 +48,7 @@ public class CarContoller {
             case "3" : delete(reader); break;
             case "4" : findById(reader); break;
             case "5" : findAll(reader); break;
+            case "0" : System.exit(0);
         }
         runNavigation();
     }
