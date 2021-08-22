@@ -1,8 +1,10 @@
 package org.example;
 
+import org.example.controller.CarContoller;
+
 public class OOPMain {
 
     public static void main(String[] args) {
-        System.out.println("OOPMain.main");
+        new CarContoller().start();
     }
 }
