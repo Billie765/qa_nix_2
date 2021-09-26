@@ -9,7 +9,7 @@ public class StringUtil {
 
     public static int numSentences(String data) {
         String[] sentences = data.split("[\\.!\\?]");
-        return sentences.length;
+        return sentences.length - 1;
     }
 
     public static int numPalindromes(String data) {
